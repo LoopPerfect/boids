@@ -1,18 +1,17 @@
-
 #include "simulation.hpp"
 
 #ifdef JYTTER
 #include <jyt/runtime.hpp>
 
-void simulation(){
+void simulation() {
   jyt.async(run);
 }
 
-#endif
+#else
 
-#ifndef JYTTER
-int main(){
+int main(int argc, char** argv) {
   run();
   return 0;
 }
+
 #endif

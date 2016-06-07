@@ -38,7 +38,7 @@ struct Display {
     return {e, hasValue};
   }
 
-  void clear( Color c = Color{0,0,0} ) {
+  void clear( Color c = Color{0, 0, 0} ) {
     al_clear_to_color(al_map_rgb(c.r, c.g, c.b));
   }
 
@@ -52,6 +52,14 @@ struct Display {
 
   size_t getHeight()const {
     return height;
+  }
+
+  bool setCursorVisible(const bool b) {
+    if (b) {
+      return al_show_mouse_cursor(display.get());
+    } else {
+      return al_hide_mouse_cursor(display.get());
+    }
   }
 
   std::shared_ptr<ALLEGRO_DISPLAY> display;

@@ -1,20 +1,20 @@
 # C++ Boids simulation - Jyt - hot-module-reload playground
 
-This is a flocking demo based on Allegro.
+This is a flocking demo based on Allegro. 
 
 # Run
 
-with clang:
+with Clang:
 ```
-clang++ -std=c++14 -I. -lallegro -lallegro_image main.cpp -o main && ./main
+clang++ -std=c++14 -I. -lallegro -lallegro_image -lallegro_main main.cpp -o main && ./main
 ```
-or with jyt:
+or with Jyt:
 ```
 jyt -x main.cpp --hot -i
 ```
 
 # Requirements
 
-- c++-14 compiant compiler
+- C++-14 compliant compiler
 - [liballegro](http://allegro.cc)
-- [jyt (optional)](http://jyt.io)
+- [Yyt (optional)](http://jyt.io)

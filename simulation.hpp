@@ -56,10 +56,11 @@ void run() {
 
   eventHandler = makeSimpleEventHandler(mouseX, mouseY, stop);
 
-  for(int i=0; i< 10; ++i)
+  for (int i = 0; i < 10; ++i)
     spawnBoid();
 
   display = alpp::Display("LoopPerfect.com - Hot Reload Demo", 800, 800);
+  display.setCursorVisible(false);
 
   std::srand(std::time(0));
 
@@ -76,7 +77,7 @@ void run() {
       if(!e) break;
     }
 
-    display.clear(alpp::Color{200,200,255});
+    display.clear(alpp::Color{100, 149, 237});
     auto newWorld = process(world, display, dt*speed);
     if(initialSize == world.size() ){
       world = newWorld;

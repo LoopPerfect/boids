@@ -1,0 +1,10 @@
+{
+  "includePaths": [
+    ".",
+    "/usr/lib/x86_64-linux-gnu/",
+    "/usr/local/include/"],
+  "libs": {
+    "linux": ["liballegro.so", "liballegro_image.so"],
+    "osx": ["liballegro.dylib"]
+  }
+}

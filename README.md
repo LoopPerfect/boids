@@ -17,4 +17,4 @@ jyt -x main.cpp --hot -i
 
 - C++-14 compliant compiler
 - [liballegro](http://allegro.cc)
-- [Yyt (optional)](http://jyt.io)
+- [Jyt (optional)](http://jyt.io)
